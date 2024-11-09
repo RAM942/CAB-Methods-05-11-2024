@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CAB Methods</title>
+</head>
+<body style="background-color: aqua;">
+    <h2> Find the maximum number in Math using CAB methods</h2>
+
+    <script>
+
+// finding max number using call method
+const numbers1=[33,66,44,99,11]
+const max_number1=Math.max.call(null,...numbers1)
+console.log(`using call method max_num is ${max_number1}`)
+
+// finding max number using apply method
+const numbers2=[123,321,456,879,654,991]
+const max_number2=Math.max.apply(null,numbers2)
+console.log(`using apply method max_num is ${max_number2}`)
+
+
+// finding max number using bind method
+const numbers3=[342,4454,6657,2234,8879,2234,7757]
+const max_number3=Math.max.bind(null,...numbers3)
+console.log(`using bind method max_num is ${max_number3()}`)
+    </script>
+</body>
+</html>
